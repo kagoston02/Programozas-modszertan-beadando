@@ -25,7 +25,7 @@ public class SheetOutputManager extends Sheet implements SheetOperations {
     }
 
     public void addNoteToSheet(int location, Scanner scanner, ArrayList<ArrayList<Character>> sheet, String key, Note[] chromaticScale) {
-        addNote(location, scanner, sheet, key, chromaticScale); // Pass the chromaticScale directly
+        addNote(location, scanner, sheet, key, chromaticScale);
     }
 
     public ArrayList<ArrayList<Character>> getSheet() {

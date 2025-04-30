@@ -14,7 +14,6 @@ public class Sheet {
     private int bars;
     private int segment;
 
-    // Remove direct instantiation
     private SheetOutputManager outputManager;
     private SheetCalculations calculations;
     private SheetFileOutput fileOutput;
@@ -30,7 +29,6 @@ public class Sheet {
         this.bars = bars;
         this.segment = segment;
 
-        // Leave outputManager and calculations uninitialized
         this.outputManager = null;
         this.calculations = null;
         this.fileOutput = null;

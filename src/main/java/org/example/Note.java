@@ -33,16 +33,13 @@ public enum Note {
         return flatName;
     }
 
+    //megfelelő félhangtípus megkeresése
     public static Note fromString(String name) {
         for (Note note : Note.values()) {
             if (note.sharpName.equalsIgnoreCase(name)) {
-                //debug
-                //System.out.println("Matched sharp note: " + name);
                 return note;
             }
             if (note.flatName != null && note.flatName.equalsIgnoreCase(name)) {
-                //debug
-                //System.out.println("Flat note: " + name);
                 return note;
             }
         }
